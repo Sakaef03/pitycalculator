@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Genshin, HSR and ZZZ pity calculator
+        </title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <p>
+            Stored pulls: 
+            <input class="js-pulls">
+        </p>
+        <p>
+            Stored gems: 
+            <input class="js-gems">
+        </p>
+        <p>
+            Current pity: 
+            <input class="js-pity">
+        </p>
+        <p>
+            Banner date: 
+            <input class="js-date">
+        </p>
+        <p>
+            <button class = "js-normal" onclick="
+                calculate(false);
+                ">
+                Without wellkin
+            </button>
+            <button class = "js-welkin" onclick="
+                calculate(true);
+            ">
+            With welkin
+            </button>
+        </p>
+        <p class="js-result"></p>
+        <script>
+            const resultElement = document.querySelector('.js-result');
+            const pullsElement =  document.querySelector('.js-pulls');
+            const gemsElement =  document.querySelector('.js-gems');
+            const pityElement =  document.querySelector('.js-pity');
+            const dateElement =  document.querySelector('.js-date');
+
+            resultElement.innerHTML = '';
+            pullsElement.value = '';
+            gemsElement.value = '';
+            pityElement.value = '';
+            dateElement.value = '';
+
+            const dayUnit = 26 * 60 * 60 * 1000;
+            var today = new Date();
+            const day = String(today.getDate()).padStart(2, '0');
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const year = today.getFullYear();
+
+            today =  day + '/' + month + '/' + year;
+
+            function calculate(isWelkin)
+            {
+                const firstDate = parseDate(today);
+                const finalDate = parseDate(dateElement.value);
+                const days = daysBetween(firstDate, finalDate);
+                var pulls = 0;
+
+                if(isWelkin === false)
+                {
+                    var gems = (days * 60) + Number(gemsElement.value);
+                    const patchDays = Math.trunc(days/42);
+                    if(patchDays > 0)
+                    {
+                        gems += (300 * patchDays);
+                    }
+                    pulls = (Math.trunc(gems/160)) + Number(pullsElement.value) + Number(pityElement.value);
+                }
+
+                else
+                {
+                    var gems = (days * 150) + Number(gemsElement.value);
+                    const welkinDays = Math.trunc(days/30);
+                    if(welkinDays > 0)
+                    {
+                        gems += (300 * welkinDays);
+                    }
+                    const patchDays = Math.trunc(days/42);
+                    if(patchDays > 0)
+                    {
+                        gems += (300 * patchDays);
+                    }
+                    pulls = (Math.trunc(gems/160)) + Number(pullsElement.value) + Number(pityElement.value);
+                }
+
+                resultElement.innerHTML =  `Resulting pulls: ${pulls}`;
+            }
+
+            function parseDate(date)
+            {
+                const [day, month, year] = date.split('/');
+                return new Date(year, month - 1, day);
+            }
+
+            function daysBetween(firstDate, secondDate)
+            {
+                const start = Date.UTC(firstDate.getFullYear(), firstDate.getMonth(), firstDate.getDate());
+                const end = Date.UTC(secondDate.getFullYear(), secondDate.getMonth(), secondDate.getDate());
+                const difference = Math.round(Math.abs(end - start)/dayUnit);
+
+                return difference;
+            }
+        </script>
+    </body>
+</html>
