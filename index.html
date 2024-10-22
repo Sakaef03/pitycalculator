@@ -45,7 +45,7 @@
             const pityElement =  document.querySelector('.js-pity');
             const dateElement =  document.querySelector('.js-date');
 
-            resultElement.innerHTML = '';
+            resultElement.innerHTML = 'Resulting pulls: ';
             pullsElement.value = '';
             gemsElement.value = '';
             pityElement.value = '';
@@ -81,8 +81,13 @@
                 {
                     var gems = (days * 150) + Number(gemsElement.value);
                     const welkinDays = Math.trunc(days/30);
+                    const remainderWelkin = days%30;
                     if(welkinDays > 0)
                     {
+                        if(remainderWelkin > 0)
+                        {
+                            welkinDays += 1;
+                        }
                         gems += (300 * welkinDays);
                     }
                     const patchDays = Math.trunc(days/42);
