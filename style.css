@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'GenshinImpact';
+    src: url('./fonts/GenshinImpact.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 750;
+    margin-top: 500;
+    width: 100vw;
+    color: white;
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'GenshinImpact', sans-serif;
+    background-color: #f1efee;
+    position: relative;
+    width: 100vw;
+    text-shadow: 2px 2px black;
+}
+
+p {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input, button {
+    font-size: 18px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 250px;
+    box-sizing: border-box;
+    font-family: 'GenshinImpact', sans-serif;
+}
+
+button {
+    background-color: #1d3665;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    offset-position: right;
+}
+
+button:hover {
+    background-color: #030914;
+}
+
+.js-result {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+    text-shadow: 2px 2px black;
+}
