@@ -23,7 +23,7 @@ function calculate(isWelkin) {
     const finalDate = parseDate(dateInputElement.value);
 
     if (isNaN(firstDate.getTime()) || isNaN(finalDate.getTime())) {
-        resultElement.innerHTML = 'Por favor, insira uma data válida.';
+        resultElement.innerHTML = '';
         return;
     }
 

@@ -44,12 +44,23 @@ input, button {
     font-family: 'GenshinImpact', sans-serif;
 }
 
+.button-container {
+    margin-left: 55px;
+}
+
+.date-container {
+    place-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
 button {
     background-color: #1d3665;
     color: white;
     cursor: pointer;
     margin-top: 10px;
     offset-position: right;
+    border-radius: 70px;
 }
 
 button:hover {
@@ -60,6 +71,12 @@ button:hover {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    margin-top: 15px;
+    margin-top: 60px;
+    margin-left: 25px;
     text-shadow: 2px 2px black;
+}
+
+.js-date {
+    
+    width: 200px;
 }

@@ -24,23 +24,27 @@
             Current pity: 
             <input class="js-pity">
         </p>
-        <p>
-            Banner date: 
-            <input class="js-date" type="date" id="start" name="trip-start" min="2020-09-28" max="2040-09-28" />
-        </p>
-        <p>
-            <button class = "js-normal" onclick="
-                calculate(false);
+        <div class="date-container">
+            <p>
+                Banner date: 
+                <input class="js-date" type="date" id="start" name="trip-start" min="2020-09-28" max="2040-09-28" />
+            </p>
+        </div>
+        <div class="button-container">
+            <p>
+                <button class = "js-normal" onclick="
+                    calculate(false);
+                    ">
+                    Without welkin
+                </button>
+                <button class = "js-welkin" onclick="
+                    calculate(true);
                 ">
-                Without welkin
-            </button>
-            <button class = "js-welkin" onclick="
-                calculate(true);
-            ">
-            With welkin
-            </button>
-        </p>
-        <p class="js-result"></p>
+                With welkin
+                </button>
+            </p>
+            <p class="js-result"></p>
+        </div>
         <script src="pitycalculator.js">
         </script>
     </body>
