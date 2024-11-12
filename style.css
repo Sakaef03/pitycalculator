@@ -8,7 +8,7 @@
 body {
     display: grid;
     place-items: center;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     height: 100%;
     margin: 750;
@@ -22,9 +22,14 @@ body {
     background-size: cover;
     font-family: 'GenshinImpact', sans-serif;
     background-color: #f1efee;
-    position: relative;
+    /* position: relative; */
     width: 100vw;
     text-shadow: 2px 2px black;
+}
+
+.input-container {
+    place-items: center;
+    justify-content: center;
 }
 
 p {
@@ -67,16 +72,24 @@ button:hover {
     background-color: #030914;
 }
 
-.js-result {
+.result-container {
+    display: grid;
+    place-items: center;
     font-size: 20px;
     font-weight: bold;
     color: white;
-    margin-top: 60px;
-    margin-left: 25px;
+    margin-top: 75px;
     text-shadow: 2px 2px black;
 }
 
+.js-result {
+    margin-left: 180px;
+}
+
+.js-5stars {
+    margin-left: 155px;
+}
+
 .js-date {
-    
     width: 200px;
 }

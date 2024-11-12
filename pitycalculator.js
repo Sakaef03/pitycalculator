@@ -3,12 +3,14 @@ const pullsElement = document.querySelector('.js-pulls');
 const gemsElement = document.querySelector('.js-gems');
 const pityElement = document.querySelector('.js-pity');
 const dateInputElement = document.querySelector('.js-date');
+const starElement = document.querySelector('.js-5stars');
 
 resultElement.innerHTML = '';
 pullsElement.value = '';
 gemsElement.value = '';
 pityElement.value = '';
 dateInputElement.value = '';
+starElement.innerHTML = '';
 
 const dayUnit = 24 * 60 * 60 * 1000;
 let today = new Date();
@@ -54,7 +56,10 @@ function calculate(isWelkin) {
         pulls = Math.trunc(gems / 160) + Number(pullsElement.value) + Number(pityElement.value);
     }
 
+    const featured =  Math.trunc(pulls/90);
     resultElement.innerHTML = `Resulting pulls: ${pulls}`;
+    const featuredMessage = `5-star characters: ${featured}`;
+    starElement.innerHTML = featuredMessage;
 }
 
 function parseDate(dateString) {
