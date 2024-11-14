@@ -12,43 +12,55 @@
         </style>
     </head>
     <body>
-        <div class="input-container">
-            <p>
-                Stored pulls: 
-                <input class="js-pulls">
-            </p>
-            <p>
-                Stored gems: 
-                <input class="js-gems">
-            </p>
-            <p>
-                Current pity: 
-                <input class="js-pity">
-            </p>
-        </div>
-        <div class="date-container">
-            <p>
-                Banner date: 
-                <input class="js-date" type="date" id="start" name="trip-start" min="2020-09-28" max="2040-09-28" />
-            </p>
-        </div>
-        <div class="button-container">
-            <p>
-                <button class = "js-normal" onclick="
-                    calculate(false);
+        <header class="header">
+            <div class="logo">
+                Pity Calculator
+            </div>
+            <div class="header-buttons">
+                <button class="header-button">Genshin Impact</button>
+                <button class="header-button">Honkai: Star Rail</button>
+                <button class="header-button">Zenless Zone Zero</button>
+            </div>
+        </header>
+        <div class="body-div">
+            <div class="input-container">
+                <p>
+                    Stored pulls: 
+                    <input class="js-pulls">
+                </p>
+                <p>
+                    Stored gems: 
+                    <input class="js-gems">
+                </p>
+                <p>
+                    Current pity: 
+                    <input class="js-pity">
+                </p>
+            </div>
+            <div class="date-container">
+                <p>
+                    Banner date: 
+                    <input class="js-date" type="date" id="start" name="trip-start" min="2020-09-28" max="2040-09-28" />
+                </p>
+            </div>
+            <div class="button-container">
+                <p>
+                    <button class = "js-normal" onclick="
+                        calculate(false);
+                        ">
+                        Without welkin
+                    </button>
+                    <button class = "js-welkin" onclick="
+                        calculate(true);
                     ">
-                    Without welkin
-                </button>
-                <button class = "js-welkin" onclick="
-                    calculate(true);
-                ">
-                With welkin
-                </button>
-            </p>
-        </div>
-        <div class="result-container">
-            <p class="js-result"></p>
-            <p class="js-5stars"></p>
+                    With welkin
+                    </button>
+                </p>
+            </div>
+            <div class="result-container">
+                <p class="js-result"></p>
+                <p class="js-5stars"></p>
+            </div>
         </div>
         <script src="pitycalculator.js">
         </script>

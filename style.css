@@ -5,7 +5,7 @@
     font-style: normal;
 }
 
-body {
+/* body {
     display: grid;
     place-items: center;
     flex-direction: row;
@@ -22,12 +22,74 @@ body {
     background-size: cover;
     font-family: 'GenshinImpact', sans-serif;
     background-color: #f1efee;
-    /* position: relative; */
-    width: 100vw;
+    text-shadow: 2px 2px black;
+} */
+
+body {
+    margin: 0;
+    color: white;
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'GenshinImpact', sans-serif;
     text-shadow: 2px 2px black;
 }
 
+.body-div {
+    display: grid;
+    place-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    margin: 750;
+    margin-top: 500;
+    width: 100vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgb(11, 4, 116, 1);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-button {
+    background-color: #1d3665;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'GenshinImpact', sans-serif;
+}
+
+.header-button:hover {
+    background-color: #030914;
+}
+
 .input-container {
+    margin-top: 80px;
     place-items: center;
     justify-content: center;
 }
