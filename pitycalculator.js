@@ -4,6 +4,7 @@ const gemsElement = document.querySelector('.js-gems');
 const pityElement = document.querySelector('.js-pity');
 const dateInputElement = document.querySelector('.js-date');
 const starElement = document.querySelector('.js-5stars');
+const headerElement = document.querySelector('.js-header');
 
 resultElement.innerHTML = '';
 pullsElement.value = '';
@@ -68,4 +69,19 @@ function daysBetween(firstDate, secondDate) {
     const start = Date.UTC(firstDate.getFullYear(), firstDate.getMonth(), firstDate.getDate());
     const end = Date.UTC(secondDate.getFullYear(), secondDate.getMonth(), secondDate.getDate());
     return Math.round(Math.abs(end - start) / dayUnit);
+}
+
+function changeGame(game) {
+    //alert(game);
+    switch(game) {
+        case 'genshin':
+            headerElement.style.backgroundColor = '#2a529d';
+            break;
+        case 'hsr':
+            headerElement.style.backgroundColor = '#64305f';
+            break;
+        case 'zzz':
+            headerElement.style.backgroundColor = '#9e5122';
+            break;
+    }
 }

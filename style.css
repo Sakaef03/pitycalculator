@@ -3,7 +3,57 @@ body {
 }
 
 .input-container {
+    margin: 0 auto;
     border-radius: 25px;
     padding: 20px;
     background-color: gray;
+    text-align: center;
+    width: 500px;
+}
+
+.js-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #2a529d;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.first-space {
+    height: 75px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 0px;
+}
+
+.genshin-button {
+    width: 150px;
+    height: 60px;
+    border-radius: 0px;
+    background-color: #2a529d;
+    border-color: #2a529d;
+}
+
+.zzz-button {
+    width: 150px;;
+    height: 60px;
+    border-radius: 0px;
+    background-color: #9e5122;
+    border-color: #9e5122;
+}
+
+.hsr-button {
+    width: 150px;
+    height: 60px;
+    border-radius: 0px;
+    background-color: #64305f;
+    border-color: #64305f;
 }
