@@ -1,4 +1,9 @@
-body
-{
+body {
     background-color: darkgray;
+}
+
+.input-container {
+    border-radius: 25px;
+    padding: 20px;
+    background-color: gray;
 }
