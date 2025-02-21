@@ -31,10 +31,14 @@
                 </div>
                 <div class="button-container">
                     <p>
-                        <button class="js-normal">
+                        <button class="js-normal" onclick="
+                            calculate(true);
+                            ">
                             Without Welkin
                         </button>
-                        <button class="js-welkin">
+                        <button class="js-welkin" onclick="
+                            calculate(false)
+                            ">
                             Without Welkin
                         </button>
                     </p>
@@ -43,8 +47,8 @@
                     <p class="js-result"></p>
                 </div>
             </div>
-            <script>
-                
+            <script src="pitycalculator.js">
+
             </script>
         </div>
     </body>
