@@ -61,8 +61,8 @@ body {
 
 .first-banner {
     margin: 0 auto;
-    width: 250px;
-    height: 250px;
+    width: 700px;
+    height: 350px;
     border-radius: 25px;
     padding: 20px;
     background-color: gray;
@@ -72,8 +72,8 @@ body {
 
 .second-banner {
     margin: 0 auto;
-    width: 250px;
-    height: 250px;
+    width: 700px;
+    height: 350px;
     border-radius: 25px;
     padding: 20px;
     background-color: gray;
