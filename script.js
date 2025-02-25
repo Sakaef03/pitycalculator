@@ -5,6 +5,9 @@ const pityElement = document.querySelector('.js-pity');
 const dateInputElement = document.querySelector('.js-date');
 const starElement = document.querySelector('.js-5stars');
 const headerElement = document.querySelector('.js-header');
+const firstButton = document.querySelector('.genshin-button');
+const secondButton = document.querySelector('.hsr-button');
+const thirdButton = document.querySelector('.zzz-button');
 
 resultElement.innerHTML = '';
 pullsElement.value = '';
@@ -17,6 +20,10 @@ let today = new Date();
 const day = String(today.getDate()).padStart(2, '0');
 const month = String(today.getMonth() + 1).padStart(2, '0');
 const year = today.getFullYear();
+
+let firstJump = 1;
+let secondJump = 2;
+let thirdJump = 3;
 
 today = day + '/' + month + '/' + year;
 
@@ -72,15 +79,14 @@ function daysBetween(firstDate, secondDate) {
 }
 
 function changeGame(game) {
-    //alert(game);
     switch(game) {
-        case 'genshin':
+        case 1:
             headerElement.style.backgroundColor = '#2a529d';
             break;
-        case 'hsr':
+        case 2:
             headerElement.style.backgroundColor = '#64305f';
             break;
-        case 'zzz':
+        case 3:
             headerElement.style.backgroundColor = '#9e5122';
             break;
     }
