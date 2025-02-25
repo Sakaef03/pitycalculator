@@ -15,9 +15,11 @@
                 Pity Calculator
             </div>
             <div class="header-buttons">
-                <button class="genshin-button" onclick="changeGame(1);">Genshin Impact</button>
-                <button class="hsr-button" onclick="changeGame(2);">Honkai: Star Rail</button>
-                <button class="zzz-button" onclick="changeGame(3);">Zenless Zone Zero</button>
+                <select class="js-selector" name="game" id="game" onchange="changeGame(event)">
+                    <option value="genshin">Genshin Impact</option>
+                    <option value="hsr">Honkai: Star Rail</option>
+                    <option value="zzz">Zenless Zone Zero</option>
+                </select>
             </div>
         </header>
         <p class="first-space">
