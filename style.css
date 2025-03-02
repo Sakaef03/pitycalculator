@@ -62,7 +62,7 @@ body {
 .first-banner {
     margin: 0 auto;
     width: 600px;
-    height: 350px;
+    height: 400px;
     border-radius: 25px;
     padding: 20px;
     background-color: gray;
@@ -73,7 +73,7 @@ body {
 .second-banner {
     margin: 0 auto;
     width: 600px;
-    height: 350px;
+    height: 400px;
     border-radius: 25px;
     padding: 20px;
     background-color: gray;
