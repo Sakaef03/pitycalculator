@@ -102,4 +102,8 @@ body {
         max-width: 400px;
         height: auto;
     }
+
+    .js-dateselect {
+        display: none;
+    }
 }
