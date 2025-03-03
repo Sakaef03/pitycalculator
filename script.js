@@ -149,3 +149,12 @@ function updateBanners(selectedGame) {
         element.textContent = gameObject.duration;
     });
 }
+
+function updateTime(index) {
+    const dates = gameObject.duration.split(' - ');
+    const selectedDate = index === 1 ? dates[0] : dates[1];
+    const [day, month, year] = selectedDate.split('/');
+    const formattedDate = `${year}-${month}-${day}`;
+    dateInputElement.value = formattedDate;
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}
