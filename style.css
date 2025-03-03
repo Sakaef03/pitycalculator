@@ -35,31 +35,11 @@ body {
     gap: 0px;
 }
 
-.genshin-button {
-    width: 150px;
-    height: 60px;
-    border-radius: 0px;
-    background-color: #2a529d;
-    border-color: #2a529d;
+.second-space {
+    height: 30px;
 }
 
-.zzz-button {
-    width: 150px;;
-    height: 60px;
-    border-radius: 0px;
-    background-color: #9e5122;
-    border-color: #9e5122;
-}
-
-.hsr-button {
-    width: 150px;
-    height: 60px;
-    border-radius: 0px;
-    background-color: #64305f;
-    border-color: #64305f;
-}
-
-.first-banner {
+/* .first-banner {
     margin: 0 auto;
     width: 600px;
     height: 400px;
@@ -81,13 +61,44 @@ body {
     float: right;
 }
 
-.second-space {
-    height: 30px;
-}
-
 .banner-container {
     border-radius: 30px;
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 10px;
+} */
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+.first-banner,
+.second-banner {
+    width: 600px;
+    height: 400px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: gray;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-banner,
+    .second-banner {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
 }
