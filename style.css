@@ -123,3 +123,10 @@ p {
     border-color: #423745;
     color: white;
 }
+
+.js-selector {
+    background-color: #2a529d;
+    border: none;
+    color: white;
+    height: 60px;
+}

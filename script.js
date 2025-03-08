@@ -112,16 +112,19 @@ function changeGame(e) {
     switch(game) {
         case 'genshin':
             headerElement.style.backgroundColor = '#2a529d';
+            selectorElement.style.backgroundColor = '#2a529d';
             game = 1;
             updateBanners(1);
             break;
         case 'hsr':
             headerElement.style.backgroundColor = '#64305f';
+            selectorElement.style.backgroundColor = '#64305f';
             game = 2;
             updateBanners(2);
             break;
         case 'zzz':
             headerElement.style.backgroundColor = '#9e5122';
+            selectorElement.style.backgroundColor = '#9e5122';
             game = 3;
             updateBanners(3);
             break;
