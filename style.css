@@ -1,12 +1,16 @@
 body {
-    background-color: darkgray;
+    background-color: #232024;
+}
+
+p {
+    color: white;
 }
 
 .input-container {
     margin: 0 auto;
     border-radius: 25px;
     padding: 20px;
-    background-color: gray;
+    background-color: #2D282F;
     text-align: center;
     width: 500px;
     height: 250px;
@@ -38,6 +42,10 @@ body {
 
 .second-space {
     height: 30px;
+}
+
+.js-result {
+    color: white;
 }
 
 /* .first-banner {
@@ -86,7 +94,7 @@ body {
     height: 420px;
     border-radius: 25px;
     padding: 20px;
-    background-color: gray;
+    background-color: #2D282F;
     text-align: center;
 }
 
@@ -102,4 +110,16 @@ body {
         max-width: 400px;
         height: auto;
     }
+}
+
+.js-pulls,
+.js-pity,
+.js-gems,
+.js-date,
+.js-normal,
+.js-welkin,
+.js-dateselect {
+    background-color: #423745;
+    border-color: #423745;
+    color: white;
 }
