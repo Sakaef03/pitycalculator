@@ -43,11 +43,11 @@ const honkai = {
 };
 
 const zenless = {
-    firstImage: "images/anby.png",
-    firstText: `Anby`,
-    secondImage: "images/burnice.png",
-    secondText: `Burnice`,
-    duration: `12/03/2025 - 02/04/2025`
+    firstImage: "images/trigger.png",
+    firstText: `Trigger`,
+    secondImage: "images/zhuyuan.png",
+    secondText: `Zhu Yuan`,
+    duration: `02/04/2025 - 22/04/2025`
 };
 
 let gameObject;
