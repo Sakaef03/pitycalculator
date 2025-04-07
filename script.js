@@ -35,11 +35,11 @@ const genshin = {
 };
 
 const honkai = {
-    firstImage: "images/mydei.png",
-    firstText: `Mydei`,
-    secondImage: "images/huohuo.png",
-    secondText: `Huohuo`,
-    duration: `19/03/2025 - 08/04/2025`
+    firstImage: "images/castorice.png",
+    firstText: `Castorice`,
+    secondImage: "images/multi1.png",
+    secondText: `Fugue, Jiaoqiu & Acheron`,
+    duration: `08/04/2025 - 30/04/2025`
 };
 
 const zenless = {
