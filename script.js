@@ -31,7 +31,7 @@ const genshin = {
     firstText: `Venti`,
     secondImage: "images/characters/xilonen.png",
     secondText: `Xilonen`,
-    duration: `15/04/2025 - 06/05/2025`
+    duration: `15/04/2025 - 05/05/2025`
 };
 
 const honkai = {
