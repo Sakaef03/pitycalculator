@@ -29,7 +29,7 @@ let game = 1;
 const genshin = {
     firstImage: "images/characters/venti.png",
     firstText: `Venti`,
-    secondImage: "images/characters/Xilonen.png",
+    secondImage: "images/characters/xilonen.png",
     secondText: `Xilonen`,
     duration: `15/04/2025 - 06/05/2025`
 };
