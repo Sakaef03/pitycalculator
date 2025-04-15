@@ -27,25 +27,25 @@ const year = today.getFullYear();
 let game = 1;
 
 const genshin = {
-    firstImage: "images/varesa.png",
-    firstText: `Varesa`,
-    secondImage: "images/xianyun.png",
-    secondText: `Xianyun`,
-    duration: `26/03/2025 - 15/04/2025`
+    firstImage: "images/characters/venti.png",
+    firstText: `Venti`,
+    secondImage: "images/characters/Xilonen.png",
+    secondText: `Xilonen`,
+    duration: `15/04/2025 - 06/05/2025`
 };
 
 const honkai = {
-    firstImage: "images/castorice.png",
+    firstImage: "images/characters/castorice.png",
     firstText: `Castorice`,
-    secondImage: "images/multi1.png",
+    secondImage: "images/characters/multi1.png",
     secondText: `Fugue, Jiaoqiu & Acheron`,
     duration: `08/04/2025 - 30/04/2025`
 };
 
 const zenless = {
-    firstImage: "images/trigger.png",
+    firstImage: "images/characters/trigger.png",
     firstText: `Trigger`,
-    secondImage: "images/zhuyuan.png",
+    secondImage: "images/characters/zhuyuan.png",
     secondText: `Zhu Yuan`,
     duration: `02/04/2025 - 22/04/2025`
 };
