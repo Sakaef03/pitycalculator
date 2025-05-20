@@ -35,19 +35,19 @@ const genshin = {
 };
 
 const honkai = {
-    firstImage: "images/characters/anaxa.png",
-    firstText: `Anaxa`,
-    secondImage: "images/characters/ratio.png",
-    secondText: `Dr. Ratio`,
-    duration: `01/05/2025 - 20/05/2025`
+    firstImage: "images/characters/hyacine.png",
+    firstText: `Hyacine`,
+    secondImage: "images/characters/herta.png",
+    secondText: `Herta`,
+    duration: `20/05/2025 - 11/06/2025`
 };
 
 const zenless = {
-    firstImage: "images/characters/vivian.png",
-    firstText: `Vivian`,
-    secondImage: "images/characters/jane.png",
-    secondText: `Jane Doe`,
-    duration: `22/04/2025 - 14/05/2025`
+    firstImage: "images/characters/hugo.png",
+    firstText: `Hugo`,
+    secondImage: "images/characters/lighter.png",
+    secondText: `Lighter`,
+    duration: `14/05/2025 - 05/06/2025`
 };
 
 let gameObject;
