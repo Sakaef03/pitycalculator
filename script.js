@@ -27,11 +27,11 @@ const year = today.getFullYear();
 let game = 1;
 
 const genshin = {
-    firstImage: "images/characters/escoffier.png",
-    firstText: `Escoffier`,
-    secondImage: "images/characters/navia.png",
-    secondText: `Navia`,
-    duration: `06/05/2025 - 27/05/2025`
+    firstImage: "images/characters/raiden.png",
+    firstText: `Raiden Shogun`,
+    secondImage: "images/characters/kinich.png",
+    secondText: `Kinich`,
+    duration: `28/05/2025 - 18/05/2025`
 };
 
 const honkai = {
