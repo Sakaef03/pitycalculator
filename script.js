@@ -31,7 +31,7 @@ const genshin = {
     firstText: `Raiden Shogun`,
     secondImage: "images/characters/kinich.png",
     secondText: `Kinich`,
-    duration: `28/05/2025 - 18/05/2025`
+    duration: `28/05/2025 - 18/06/2025`
 };
 
 const honkai = {
